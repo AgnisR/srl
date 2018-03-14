@@ -17,3 +17,6 @@ Auth::routes();
 Route::get('/', 'PageController@index');
 Route::get('/home', 'PageController@index')->name('home');
 Route::get('/leagues', 'LeagueController@leagues');
+Route::get('/forum', 'PageController@underconstruction');
+Route::get('/paddock', 'PageController@underconstruction');
+Route::get('/guide', 'PageController@underconstruction');

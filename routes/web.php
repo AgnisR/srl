@@ -16,7 +16,16 @@ Auth::routes();
 
 Route::get('/', 'PageController@index');
 Route::get('/home', 'PageController@index')->name('home');
-Route::get('/leagues', 'LeagueController@leagues');
 Route::get('/forum', 'PageController@underconstruction');
 Route::get('/paddock', 'PageController@underconstruction');
 Route::get('/guide', 'PageController@underconstruction');
+
+Route::get('article/{id}','ArticleController@article');
+Auth::routes();
+
+Route::get('/LFS', 'SimController@LFS');
+Route::get('/RaceRoom', 'SimController@RaceRoom');
+
+Route::get('/leagues', 'LeagueController@leagues');
+Route::get('leagues/{id}', 'LeagueController@league');
+Route::get('/myleagues', 'LeagueController@myleagues');

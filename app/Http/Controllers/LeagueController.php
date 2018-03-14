@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use DB;
 use Illuminate\Http\Request;
 use App\leagues;
-use App\simulators;
+use App\sims;
 
 class LeagueController extends Controller
 {

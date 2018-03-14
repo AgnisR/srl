@@ -10,7 +10,8 @@ class PageController extends Controller
 {
     public function index()
     {
-        return view('start');
+        $article = articles::all();
+        return view('start')->with('article', $article);
     }
     public function underconstruction(){
         return view('underconstruction');

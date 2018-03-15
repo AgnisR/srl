@@ -5,4 +5,22 @@
 <h1>{{ $articles->title }}</h1>
 <p>{{ $articles->article }}</p>
 
+      <hr>
+    @guest
+    @else
+      <h4>Ieraksti komentāru:</h4>
+      <form role="form" method="post" action="/comments/a/{{$articles->id}}">
+          {{ csrf_field() }}
+        <div class="form-group">
+            <label for="comment"></label>
+          <textarea id="comment" name="comment" class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Pievienot</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Komentāri:</p><br>
+
+@endguest
+
 @stop

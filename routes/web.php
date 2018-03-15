@@ -20,8 +20,11 @@ Route::get('/forum', 'PageController@underconstruction');
 Route::get('/paddock', 'PageController@underconstruction');
 Route::get('/guide', 'PageController@underconstruction');
 
-Route::get('article/{id}','ArticleController@article');
+Route::get('articles/create','ArticleController@create');
+Route::post('/articles', 'ArticleController@store');
+Route::get('articles/{id}','ArticleController@article');
 Auth::routes();
+
 
 Route::get('/LFS', 'SimController@LFS');
 Route::get('/RaceRoom', 'SimController@RaceRoom');

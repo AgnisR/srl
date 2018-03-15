@@ -10,7 +10,7 @@ class PageController extends Controller
 {
     public function index()
     {
-        $article = articles::all();
+        $article = articles::latest()->get();
         return view('start')->with('article', $article);
     }
     public function underconstruction(){

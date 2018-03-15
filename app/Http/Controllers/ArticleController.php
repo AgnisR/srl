@@ -19,6 +19,12 @@ class ArticleController extends Controller
     }
 
     public function store(){
+        
+        $this->validate(request(), [
+            'title' => 'required',
+            'article' => 'required'
+        ]);
+        
         $post = new articles;
         $post->title = request('title');
         $post->article = request('article');

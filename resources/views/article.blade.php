@@ -4,6 +4,7 @@
 
 <h1>{{ $articles->title }}</h1>
 <p>{{ $articles->article }}</p>
+<p>{{ $articles->created_at->toFormattedDateString() }}</p>
 
       <hr>
     @guest

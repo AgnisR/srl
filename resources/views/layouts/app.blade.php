@@ -18,7 +18,7 @@
 <body>
     <div id="app">
         <div id="header">
-            
+                    <img src="/images/headeris.jpg" alt="LFS header">
         </div>
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">

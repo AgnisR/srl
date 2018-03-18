@@ -11,9 +11,9 @@
     <div id="leagues">
         <h2>leagues</h2>
         @foreach($league as $lea)
-            @if($lea->sim==$sim)
+            @if($lea->sim==$sim_id)
             <div id="league-thumb"><a href = "/leagues/{{$lea->id}}">
-                <div><img src="images/{{$lea->sim}}-thumb.jpg" alt="Sim-Logo"></div>
+                <div><img src="images/{{$sim}}-thumb.jpg" alt="Sim-Logo"></div>
                 <p>{{$lea->name}}</p></a>
             </div>
             @endif

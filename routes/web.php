@@ -23,6 +23,9 @@ Route::get('/guide', 'PageController@underconstruction');
 Route::get('articles/create','ArticleController@create');
 Route::post('/articles', 'ArticleController@store');
 Route::get('articles/{id}','ArticleController@article');
+
+Route::post('/comments/{t}/{i}', 'CommentController@store');
+
 Auth::routes();
 
 

@@ -22,6 +22,16 @@
       
       <p><span class="badge">2</span> Komentāri:</p><br>
 
+@foreach($comment as $com)
+@if(($com->target_id==$articles->id)and($com->type=='a'))
+    <div class="article-thumb">
+        
+        <p>{{$com->comment}}</p>
+        <small>Autors: {{$com->users->name}}</small>
+    </div>
+@endif
+@endforeach
+
 @endguest
 
 @stop

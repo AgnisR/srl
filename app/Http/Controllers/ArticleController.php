@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use DB;
 use Auth;
 use App\articles;
+use App\comments;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
     public function article($id){
         $articles=articles::find($id);
-        return view('article', compact('articles')); //viena article view
+        $comment = comments::all();
+        return view('article', compact('articles'))->with('comment', $comment); //viena article view
     }
     
     public function create(){

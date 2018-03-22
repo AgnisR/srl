@@ -23,6 +23,7 @@ Route::get('/guide', 'PageController@underconstruction');
 Route::get('articles/create','ArticleController@create');
 Route::post('/articles', 'ArticleController@store');
 Route::get('articles/{id}','ArticleController@article');
+Route::patch('/articles/{id}', 'ArticleController@edit');
 
 Route::post('/comments/{t}/{i}', 'CommentController@store');
 
@@ -33,5 +34,7 @@ Route::get('/LFS', 'SimController@LFS');
 Route::get('/RaceRoom', 'SimController@RaceRoom');
 
 Route::get('/leagues', 'LeagueController@leagues');
+Route::get('/leagues/create', 'LeagueController@create');
+Route::post('/leagues', 'LeagueController@store');
 Route::get('leagues/{id}', 'LeagueController@league');
 Route::get('/myleagues', 'LeagueController@myleagues');

@@ -16,6 +16,7 @@
     
 </head>
 <body>
+    <div id="entire-screen">
     <div id="app">
         <div id="header">
                     <img src="/images/headeris.jpg" alt="LFS header">
@@ -69,7 +70,7 @@
             </div>
         </nav>
     <div id="lowerpage" class="row">
-        <div id="sidemenu" class="col-sm-2 sidemenu">
+        <div id="sidemenu-left" class="col-sm-2 sidemenu">
         <ul class="menu">
             <li><a href="/LFS">Live for Speed</a></li>
             <li><a href="http://www.assettocorsa.net/en/" target="_blank">Assetto Corsa</a></li>
@@ -79,11 +80,14 @@
             <li><a href="https://www.studio-397.com/" target="_blank">rFactor2</a></li>
         </ul>
         </div>
-        <div id="maincontent" class="col-sm-10 maincontent">
-        <main class="py-4">
+        <div id="maincontent" class="col-sm-8 maincontent">
+        <main>
             @yield('content')
         </main>
-            </div>
+        </div>
+        <div id="sidemenu-right" class="col-sm-2 sidemenu">
+        </div>
+    </div>
     </div>
     </div>
 

@@ -1,10 +1,17 @@
 Body
 {
-color: white;
+    color: white;
     width: 100%;
     min-height: 1080px;
     height: 100%;
 }
+
+#entire-screen
+{
+    min-width: 1300px;
+    max-width: 1920px;
+}
+
 #header
 {
 	margin-bottom: 0px;
@@ -35,13 +42,21 @@ color: white;
 
 .sidemenu {
     background-color: rgb(65,30,25);
-    border-right: solid;
     border-color: rgb(30,5,0);
     border-width: 10px;
     min-height: inherit;
     height: 100%;
     font-size: 16pt;    
     padding-top: 15px;
+}
+
+#sidemenu-left {
+    border-right: solid;
+}
+
+#sidemenu-right {
+    border-left: solid;
+    padding-right: 0px;
 }
 
 .maincontent{

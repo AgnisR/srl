@@ -11,7 +11,7 @@
     @foreach($league as $lea)
         <div id="leagues">
             <div id="league-thumb"><a href = "/leagues/{{$lea->id}}">
-                <div><img src="images/{{$league->sims->name}}-thumb.jpg" alt="Sim-Logo"></div>
+                <div><img src="images/{{$lea->sims->name}}-thumb.jpg" alt="Sim-Logo"></div>
                 <p>{{$lea->name}}</p></a>
             </div>
         </div>

@@ -23,6 +23,7 @@
         </a>
     </div>
     @endforeach
+    {{ $article->links() }}
 </div>
 
 @endsection

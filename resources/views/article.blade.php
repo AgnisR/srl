@@ -4,7 +4,7 @@
 
 <h1>{{ $articles->title }}</h1>
 <p>{{ $articles->article }}</p>
-<p>{{ $articles->created_at->toFormattedDateString() }}</p>
+<small>{{ $articles->created_at->toFormattedDateString() }}</small>
 
       <hr>
     @guest
@@ -28,6 +28,8 @@
         
         <p>{{$com->comment}}</p>
         <small>Autors: {{$com->users->name}}</small>
+        <hr>
+        
     </div>
 @endif
 @endforeach

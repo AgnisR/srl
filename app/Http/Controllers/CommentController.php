@@ -23,6 +23,6 @@ class CommentController extends Controller
         
         $post->save();
         
-        return redirect('/articles/$i');
+        return redirect("/articles/{$i}");
     }
 }

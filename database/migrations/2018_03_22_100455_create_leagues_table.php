@@ -19,6 +19,7 @@ class CreateLeaguesTable extends Migration
             $table->text('description');
             $table->integer('sim');
             $table->integer('organizer');
+            $table->boolean('isActive')->default(0);
             $table->timestamps();
         });
     }
